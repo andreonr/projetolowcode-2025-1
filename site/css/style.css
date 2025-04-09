@@ -1,0 +1,21 @@
+* { 
+  margin: 0;
+  padding: 0;
+  /* background: rgb(16, 16, 50); */
+}
+
+
+.body{
+  /* achar uma fonte bacana para o site */
+  color: #696969;
+}
+
+.header-nav {
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  background: #000;
+  text-align: center;
+}
