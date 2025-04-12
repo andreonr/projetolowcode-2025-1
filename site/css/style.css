@@ -1,21 +1,69 @@
 * { 
+  background-color: #d9d6d6;
   margin: 0;
   padding: 0;
   /* background: rgb(16, 16, 50); */
-}
+ }  
 
 
-.body{
+body {
   /* achar uma fonte bacana para o site */
-  color: #696969;
+  /* background-color: rgb(171, 109, 27); */
+  color: #000000;
 }
 
 .header-nav {
-  display: none;
+  display: flex;
   width: 100%;
   position: absolute;
-  left: 0px;
-  top: 100px;
-  background: #000;
+  margin: auto;
+  /* background: red; */
   text-align: center;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.header-nav ul{
+  display: flex;
+  font-size: 24px;
+  gap: 10px;
+  margin: 10px;
+  padding: 30px;
+  /* margin: auto; */
+  list-style: none;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.sobre p{
+  background-color: aquamarine;
+  color: red;
+}
+/* formulário */
+.formulario {
+  width: 800px;
+  margin: 30px auto;
+  margin-top: 750px;
+  box-shadow: 0 0 10px #CCC;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Tahoma, Arial;
+  input, textarea {
+      border: 1px solid #CCC;
+      border-radius: 10px;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+  }
+  .erro {
+      color: red;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  label {
+      margin: 5px 0;
+      display: block;
+  }
 }
