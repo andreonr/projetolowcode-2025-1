@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vingador do futuro</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <img src="/imgs/fototitulosite.jpg" alt="Foto do Título">
+</head>
+
+<body>
+  <header class="header">
+    <!-- cabeçalho -->
+    <h1>Vingador do futuro</h1>
+    <div class="container">
+      <div class="flex">
+        <div class="flex-col1">
+          <a href="index.html" title="Home"></a>
+          <img src="/imgs/vingadorlogomenusite.jpg" alt="Foto do Header">
+        </div>
+        <div class="flex-col2">
+          <a href="#" onclick="mostrarMenu()" class="header-menu"><i class="fas fa-bars"></i></a>
+        </div>
+
+        <nav class="header-nav">
+          <!-- menu -->
+          <ul>
+            <!-- <li><a class="link" alt="capítulo 1">Capitulo I</a></li> depois usar ele no sobre o jogo -->
+            <li>
+              <a href="index.html" title="Home">Home</a>
+            </li>
+            <li>
+              <a href="sobre.html" title="Sobre">Sobre</a>
+            </li>
+            <li>
+              <a href="contato.html" title="Contato">Contato</a>
+            </li>
+            <li>
+              <a href="jogar.html" title="Jogar" class="header-btn">Jogar</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="index">
+      <div class="homepart">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus,
+          aspernatur dolores corrupti magnam dolor? Rem deleniti, repellendus aliquid dolore,
+          repudiandae illum officiis in corporis fugiat necessitatibus voluptatum obcaecati nisi!</p>
+      </div>
+    </section>
+    <section class="sobre">
+      <div class="container">
+        <h1><span>Sobre o jogo Vingador do Futuro</span></h1>
+        <p>
+          Em um futuro distópico. um homem apenas chamado de Bob é um ex-soldado da seal que sofre uma perda inestimável.
+          Quando estavam de férias, toda sua família em uma festa de aniversário é atacada por vários criminosos que cometem uma barbárie assassinando a todos.
+          Mesmo o caso indo à justiça sua família não obteve a mesma, visto que, os criminosos eram envolvidos com as
+          autoridades e o caso foi "arquivado" por não encontrarem nenhuma pista.
+          Assim, como forma de retaliação usa todo o seu conhecimento marcial e bélico adquirido com os anos, o homem sai
+          em busca de vingança não só com quem cometeu, mas também a todos envolvidos nesse caso.
+        </p>
+      </div>
+    </section>
+  </main>
+
+
+  <h1>Formulário</h1>
+  <!-- ainda validar e-mail no formulário -->
+  <form name="form1" method="get" action="">
+      <label for="nome">
+          Digite seu nome:
+      </label>
+      <br>
+      <input type="text" name="nome" id="nome"
+      placeholder="Nome completo">
+      <br>
+      <div class="erro erro-nome"></div>
+      <label for="mensagem">
+          Digite sua mensagem:
+      </label>
+      <br>
+      <textarea name="mensagem" id="mensagem" rows="5"
+      placeholder="Envie sua mensagem aqui"></textarea>
+      <br>
+      <div class="erro erro-mensagem"></div>
+      <br>
+      <button type="button" onclick="validar()">
+          Validar e Enviar
+      </button>
+  </form>
+
+  <script>
+      function validar() {
+          let nome = document.querySelector("#nome").value;
+          let mensagem = document.querySelector("#mensagem").value;
+
+          //zerar as mensagens de erro
+          document.querySelector(".erro").innerHTML = "";
+
+          if (nome == "") {
+              document.querySelector(".erro-nome").innerHTML = "Por favor, preencha este campo";
+          } else if (mensagem == "") {
+              document.querySelector(".erro-mensagem").innerHTML = "Por favor, preencha este campo";
+          } else {
+              alert("Enviar mensagem");
+          }
+      }
+  </script>
+
+  <!-- <script>
+    mostrarMenu = function () {
+      document.querySelector(".header-nav").classList.toggle("show");
+    }
+
+    
+  </script> -->
+</body>
+
+</html>
+
+</html>
