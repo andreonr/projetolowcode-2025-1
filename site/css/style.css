@@ -1,97 +1,151 @@
-* { 
-  background-color: rgb(9, 1, 26);
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+
+body {
+  background-color: rgb(9, 1, 26);
   color: antiquewhite;
-  font-family: Kanit;
-  /* background: rgb(16, 16, 50); */
- }  
-
-
-/* body { */
-  /* achar uma fonte bacana para o site */
-  /* background-color: rgb(171, 109, 27); */
-  /* color: #000000;
-} */
-
-.header-nav {
-  display: flex;
-  width: 100%;
-  position: absolute;
-  margin: auto;
-  /* background: red; */
-  text-align: center;
-  justify-content: flex-end;
-  flex-direction: row;
 }
 
-.header-nav ul{
+img-logo{
+  width: 50px;
+  height: 50px;
+}
+
+.container-about {
   display: flex;
-  font-size: 24px;
-  gap: 10px;
-  margin: 10px;
-  padding: 30px;
-  /* margin: auto; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+.nav-container{
+display: flex;
+justify-content: flex-end;
+}
+
+.header h1 {
+  font-size: 2em;
+}
+
+.header-nav ul {
+  display: flex;
+  gap: 15px;
   list-style: none;
+  font-size: 18px;
 }
 
-
-.container {
-  display: inline-block;
+.header-nav a {
+  text-decoration: none;
+  color: antiquewhite;
 }
 
-img {
-  margin: auto;
-  max-width:200px;
-  max-height:150px;
-  padding-top: 80px;
-  width: auto;
-  height: auto;
-}
-.sobre p{
-  background-color: aquamarine;
-  color: rgb(16, 16, 50);
+.header-nav a:hover {
+  color: #f4a261;
 }
 
+.header-menu {
+  display: none;
+  cursor: pointer;
+}
 
-.grid {
+.homepart-container {
   display: flex;
-  .col {
-      img {
-          width: 80%;
-      }
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre h1 {
+  display: flex;
+  justify-content: center; 
+  /* justify é horizontal */
+  /* aligh é vertical  */
+}
+.sobre p {
+  background-color: rgb(229, 236, 233);
+  color: rgb(16, 16, 50);
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-menu {
+    display: block;
+  }
+
+  .header-nav.show {
+    display: flex;
+  }
+
+  .homepart img {
+    width: 100%;
+  }
+
+  .about-container {
+display: flex;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .grid .col img {
+    width: 100%;
   }
 }
 
-/* formulário */
+
 form {
-  fieldset {
-      border: 1px solid #CCC;
-      border-radius: 10px;
-      padding: 15px;
-      legend {
-          font-weight: bold;
-      }
-      label {
-          margin-top: 10px;
-          display: inline-block;
-      }
-      input {
-          border: 1px solid #CCC;
-          padding: 10px;
-          box-sizing: border-box;
-          width: 100%;
-      }
-      button {
-          border: 0;
-          background: rgb(255, 255, 255);
-          color: rgb(16, 16, 50);
-          padding: 10px 20px;
-          margin-top: 10px;
-      }
-      .parsley-errors-list {
-          color: rgb(16, 16, 50);
-          margin-left: 20px;
-      }
-  }
+  margin-top: 20px;
+}
+
+form fieldset {
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #CCC;
+}
+
+form button {
+  background-color: #f4a261;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #e76f51;
 }

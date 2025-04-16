@@ -4,131 +4,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Vingador do futuro</title>
-
+  <title>Vingador do Futuro</title>
   <link rel="stylesheet" href="../css/style.css">
-
-  <img src="../imgs/fototitulosite.png" alt="Foto do Título">
-
+  <link rel="shortcut icon" type="imagex/png" href="../imgs/fototitulosite.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-    <!-- cabeçalho -->
-    <h1>Vingador do futuro</h1>
-    <div class="container">
+    <img class="img-logo" src="../imgs/vingadorlogomenusite.jpg" alt="Foto do Header">
+    
+    <div class="nav-container">
       <div class="flex">
         <div class="flex-col1">
-          <a href="index.html" title="Home"></a>
-          <!-- <img src="../imgs/vingadorlogomenusite.jpg" alt="Foto do Header"> -->
+          <a href="index.html" title="Home">
+            <!-- <img class="img-logo" src="../imgs/vingadorlogomenusite.jpg" alt="Foto do Header"> -->
+          </a>
         </div>
         <div class="flex-col2">
           <a href="#" onclick="mostrarMenu()" class="header-menu"><i class="fas fa-bars"></i></a>
         </div>
-
         <nav class="header-nav">
-          <div class="header">
-          <!-- menu -->
           <ul>
-            <!-- <li><a class="link" alt="capítulo 1">Capitulo I</a></li> depois usar ele no sobre o jogo -->
-            <li>
-              <a href="index.html" title="Home">Home</a>
-            </li>
-            <li>
-              <a href="sobre.html" title="Sobre">Sobre</a>
-            </li>
-            <li>
-              <a href="galeria.html" title="Galeria">Galeria</a>
-            </li>
-            <li>
-              <a href="contato.html" title="Contato">Contato</a>
-            </li>
-            <li>
-              <a href="jogar.html" title="Jogar" class="header-btn">Jogar</a>
-            </li>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="sobre.html" title="Sobre">Sobre</a></li>
+            <li><a href="galeria.html" title="Galeria">Galeria</a></li>
+            <li><a href="contato.html" title="Contato">Contato</a></li>
+            <li><a href="jogar.html" title="Jogar" class="header-btn">Jogar</a></li>
           </ul>
-        </div>
         </nav>
       </div>
     </div>
   </header>
+
   <main>
     <section class="index">
-      <div class="homepart">
-        <img src="../imgs/vingador-logo.jpeg" alt="logo do site">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus,
-          aspernatur dolores corrupti magnam dolor? Rem deleniti, repellendus aliquid dolore,
-          repudiandae illum officiis in corporis fugiat necessitatibus voluptatum obcaecati nisi!</p>
-      </div>
-    </section>
-    <section class="sobre">
-      <div class="container">
-        <h1><span>Sobre o jogo</span></h1>
-        <img src="../imgs/vingador-heroi.jpeg" alt="foto do herói de máscara">
-        <p>
-          Em um futuro distópico. um homem apenas chamado de Bob é um ex-soldado da seal que sofre uma perda
-          inestimável.
-          Quando estavam de férias, toda sua família em uma festa de aniversário é atacada por vários criminosos que
-          cometem uma barbárie assassinando a todos.
-          Mesmo o caso indo à justiça sua família não obteve a mesma, visto que, os criminosos eram envolvidos com as
-          autoridades e o caso foi "arquivado" por não encontrarem nenhuma pista.
-          Assim, como forma de retaliação usa todo o seu conhecimento marcial e bélico aprendido com os anos, o homem
-          sai
-          em busca de vingança não só com quem cometeu, mas também a todos envolvidos nesse caso.
-        </p>
+      <div class="homepart-container">
+        <img src="../imgs/vingador-logo.jpeg" width="800px" alt="Logo do site">
       </div>
     </section>
 
-    <section class="galeria">
+    <section class="sobre">
+    <h1>Sobre o jogo</h1>
+      <div class="container-about">
+
+          <img src="../imgs/vingador-heroi.jpeg" width="200px" alt="Foto do herói de máscara">
+          <p>Em um futuro distópico, um homem chamado Bob busca vingança após perder sua família em uma emboscada, 
+            ao não obter justiça ele começa a agir como um vigilante pela cidade contra todos os criminosos</p>
+      </div>
+    </section>
+
+    <section class="galeria-container">
       <h1>Galeria de Fotos</h1>
       <div class="grid">
         <div class="col">
-  
-          <a href="images/1g.jpg" title="Foto 1"
-          data-fslightbox="galeria">
+          <a href="images/1g.jpg" title="Foto 1" data-fslightbox="galeria">
             <img src="images/1p.jpg" alt="Foto 1">
           </a>
         </div>
         <div class="col">
-          <a href="images/2g.jpg" title="Foto 2"
-          data-fslightbox="galeria">
+          <a href="images/2g.jpg" title="Foto 2" data-fslightbox="galeria">
             <img src="images/2p.jpg" alt="Foto 2">
           </a>
         </div>
       </div>
     </section>
-  </main>
+    
+    <section class="contato">
+      <div class="container">
+        <h1>Entre em Contato</h1>
+        <form name="form1" method="post" action="" data-parsley-validate>
+          <fieldset>
+          <legend>Preencha os campos:</legend>
+          <label for="nome">Digite seu nome</label>
+          <input type="text" name="nome" id="nome" required data-parsley-required-message="Preencha o seu nome">
+          
+          <label for="telefone">Digite o telefone</label>
+          <input type="text" name="telefone" id="telefone" required data-parsley-required-message="Preencha o telefone">
+          
+          <label for="email">Digite o e-mail</label>
+          <input type="email" name="email" id="email" required data-parsley-required-message="Preencha o e-mail" data-parsley-type-message="Digite um e-mail válido">
+          
+          <button type="submit">Enviar Mensagem</button>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+</main>
 
-  <div class="container">
-    <h1>Entre em Contato</h1>
-    <form name="form1" method="post" action="" data-parsley-validate>
-      <fieldset>
-        <legend>Preencha os campos: </legend>
-
-        <label for="nome">Digite seu nome</label>
-        <input type="text" name="nome" id="nome" required data-parsley-required-message="Preencha o seu nome">
-        </br>
-
-        <label for="telefone">Digite o telefone</label>
-        <input type="text" name="telefone" id="telefone" required data-parsley-required-message="Preencha o telefone">
-        </br>
+  <footer>
+    <!-- lembrar de fazer o footer  -->
+  </footer>
 
 
-        <label for="email">Digite o e-mail</label>
-        <input type="email" name="email" id="email" required data-parsley-required-message="Preencha o e-mail"
-          data-parsley-type-message="Digite um e-mail válido">
-        <br>
-        
-        <button type="submit">Enviar Mensagem</button>
-      </fieldset>
-    </form>
-  </div>
 
   <script src="js/vanilla-masker.js"></script>
   <script src="js/jquery.min.js"></script>
@@ -140,66 +110,11 @@
     telefone = document.querySelector("#telefone");
     valor = document.querySelector("#valor");
 
-    // mascara para money, dinheiro
     VMasker(valor).maskMoney();
-
-    // mascara para cpf
     VMasker(cpf).maskPattern("999.999.999-99");
     VMasker(data).maskPattern("99/99/9999");
     VMasker(telefone).maskPattern("(99) 99999-9999");
-
   </script>
-
-  <!-- ainda validar e-mail no formulário -->
-  <!-- <section class="formulario">
-    <h2>Formulário</h2>
-    <form name="form1" method="get" action="">
-      <label for="nome">
-        Digite seu nome:
-      </label>
-      <br>
-      <input type="text" name="nome" id="nome" placeholder="Nome completo">
-      <br>
-      <div class="erro erro-nome"></div>
-      <label for="mensagem">
-        Digite sua mensagem:
-      </label>
-      <br>
-      <textarea name="mensagem" id="mensagem" rows="5" placeholder="Envie sua mensagem aqui"></textarea>
-      <br>
-      <div class="erro erro-mensagem"></div>
-      <br>
-      <button type="button" onclick="validar()">
-        Validar e Enviar
-      </button>
-    </form>
-  </section> -->
-
-  <!-- <script>
-    function validar() {
-      let nome = document.querySelector("#nome").value;
-      let mensagem = document.querySelector("#mensagem").value;
-
-      //zerar as mensagens de erro
-      document.querySelector(".erro").innerHTML = "";
-
-      if (nome == "") {
-        document.querySelector(".erro-nome").innerHTML = "Por favor, preencha este campo";
-      } else if (mensagem == "") {
-        document.querySelector(".erro-mensagem").innerHTML = "Por favor, preencha este campo";
-      } else {
-        alert("Enviar mensagem");
-      }
-    }
-  </script> -->
-
-  <!-- <script>
-    mostrarMenu = function () {
-      document.querySelector(".header-nav").classList.toggle("show");
-    }
-
-    
-  </script> -->
 </body>
 
 </html>
