@@ -9,18 +9,19 @@
   <link rel="shortcut icon" type="imagex/png" href="../imgs/fototitulosite.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
     <img class="img-logo" src="../imgs/vingadorlogomenusite.jpg" alt="Foto do Header">
-    
+
     <div class="nav-container">
       <div class="flex">
         <div class="flex-col1">
           <a href="index.html" title="Home">
-            <!-- <img class="img-logo" src="../imgs/vingadorlogomenusite.jpg" alt="Foto do Header"> -->
           </a>
         </div>
         <div class="flex-col2">
@@ -47,52 +48,49 @@
     </section>
 
     <section class="sobre">
-    <h1>Sobre o jogo</h1>
+      <h1>Sobre o jogo</h1>
       <div class="container-about">
 
-          <img src="../imgs/vingador-heroi.jpeg" width="200px" alt="Foto do herói de máscara">
-          <p>Em um futuro distópico, um homem chamado Bob busca vingança após perder sua família em uma emboscada, 
-            ao não obter justiça ele começa a agir como um vigilante pela cidade contra todos os criminosos</p>
+        <img src="../imgs/vingador-heroi.jpeg" width="200px" alt="Foto do herói de máscara">
+        <p>Em um futuro distópico, um homem chamado Bob busca vingança após perder sua família em uma emboscada,
+          ao não obter justiça ele começa a agir como um vigilante pela cidade contra todos os criminosos</p>
       </div>
     </section>
 
-    <section class="galeria-container">
+    <section class="galeria">
       <h1>Galeria de Fotos</h1>
-      <div class="grid">
-        <div class="col">
-          <a href="images/1g.jpg" title="Foto 1" data-fslightbox="galeria">
-            <img src="images/1p.jpg" alt="Foto 1">
-          </a>
-        </div>
-        <div class="col">
-          <a href="images/2g.jpg" title="Foto 2" data-fslightbox="galeria">
-            <img src="images/2p.jpg" alt="Foto 2">
-          </a>
-        </div>
+      <div class="container-gal">
+          <img src="../imgs/jogo1.png" alt="Foto do jogo 1">
+          <img src="../imgs/jogo2.png" alt="Foto do jogo 2">
+
+
+
       </div>
     </section>
-    
+
     <section class="contato">
-      <div class="container">
-        <h1>Entre em Contato</h1>
+      <h1>Entre em Contato</h1>
+      <div class="container-cont">
         <form name="form1" method="post" action="" data-parsley-validate>
           <fieldset>
-          <legend>Preencha os campos:</legend>
-          <label for="nome">Digite seu nome</label>
-          <input type="text" name="nome" id="nome" required data-parsley-required-message="Preencha o seu nome">
-          
-          <label for="telefone">Digite o telefone</label>
-          <input type="text" name="telefone" id="telefone" required data-parsley-required-message="Preencha o telefone">
-          
-          <label for="email">Digite o e-mail</label>
-          <input type="email" name="email" id="email" required data-parsley-required-message="Preencha o e-mail" data-parsley-type-message="Digite um e-mail válido">
-          
-          <button type="submit">Enviar Mensagem</button>
-        </fieldset>
-      </form>
-    </div>
-  </section>
-</main>
+            <legend>Preencha os campos:</legend>
+            <label for="nome">Digite seu nome</label>
+            <input type="text" name="nome" id="nome" required data-parsley-required-message="Preencha o seu nome">
+
+            <label for="telefone">Digite o telefone</label>
+            <input type="text" name="telefone" id="telefone" required
+              data-parsley-required-message="Preencha o telefone">
+
+            <label for="email">Digite o e-mail</label>
+            <input type="email" name="email" id="email" required data-parsley-required-message="Preencha o e-mail"
+              data-parsley-type-message="Digite um e-mail válido">
+
+            <button type="submit">Enviar Mensagem</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <!-- lembrar de fazer o footer  -->

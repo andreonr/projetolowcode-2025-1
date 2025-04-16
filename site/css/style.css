@@ -19,9 +19,34 @@ img-logo{
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 45px;
   padding: 20px;
 }
 
+.galeria h1{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+.container-gal {
+  display: flex;
+  justify-content: space-around;
+}
+.container-gal img {
+  width: 600px;
+}
+
+.contato h1{
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.container-cont {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 
 .header {
   display: flex;
@@ -74,8 +99,9 @@ justify-content: flex-end;
   /* aligh é vertical  */
 }
 .sobre p {
-  background-color: rgb(229, 236, 233);
-  color: rgb(16, 16, 50);
+  display: flex;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
   padding: 10px;
   margin-top: 20px;
 }
@@ -94,13 +120,27 @@ justify-content: flex-end;
   .header-nav.show {
     display: flex;
   }
+  
+  .nav-container{
+    display: flex;
+    flex-direction: column;
+    }
 
-  .homepart img {
+  .homepart-container img {
+    width: 100%;
+  }
+  
+  .about-container {
+    display: flex;
     width: 100%;
   }
 
-  .about-container {
-display: flex;
+  .sobre p {
+    display: flex;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 20px;
   }
 
   .grid {
@@ -116,13 +156,15 @@ display: flex;
 
 
 form {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 form fieldset {
+  margin:20px;
   border: 1px solid #CCC;
   border-radius: 10px;
   padding: 15px;
+
 }
 
 form label {
@@ -148,4 +190,52 @@ form button {
 
 form button:hover {
   background-color: #e76f51;
+}
+
+@media screen and (max-width: 480px) {
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-menu {
+    display: block;
+  }
+
+  .header-nav.show {
+    display: flex;
+  }
+  
+  .nav-container{
+    display: flex;
+    flex-direction: column;
+    }
+
+  .homepart-container img {
+    width: 100%;
+  }
+  
+  .about-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .sobre p {
+    display: flex;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .grid .col img {
+    width: 100%;
+  }
 }
