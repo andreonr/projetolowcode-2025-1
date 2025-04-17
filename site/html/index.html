@@ -12,6 +12,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="../imgs/github-brands.svg">
+  <link rel="stylesheet" media="(max-width: 480px)" href="../css/style.css"/>
+
 </head>
 
 <body>
@@ -19,35 +22,42 @@
     <img class="img-logo" src="../imgs/vingadorlogomenusite.jpg" alt="Foto do Header">
 
     <div class="nav-container">
-      <div class="flex">
-        <div class="flex-col1">
-          <a href="index.html" title="Home">
-          </a>
-        </div>
-        <div class="flex-col2">
-          <a href="#" onclick="mostrarMenu()" class="header-menu"><i class="fas fa-bars"></i></a>
-        </div>
-        <nav class="header-nav">
-          <ul>
-            <li><a href="index.html" title="Home">Home</a></li>
-            <li><a href="sobre.html" title="Sobre">Sobre</a></li>
-            <li><a href="galeria.html" title="Galeria">Galeria</a></li>
-            <li><a href="contato.html" title="Contato">Contato</a></li>
-            <li><a href="jogar.html" title="Jogar" class="header-btn">Jogar</a></li>
-          </ul>
-        </nav>
+      <div class="flex-col1">
+        <a href="index.html" title="Home">
+        </a>
       </div>
+      <!-- <div class="flex-col2">
+          <a href="#" onclick="mostrarMenu()" class="header-menu"><i class="fas fa-bars"></i></a>
+        </div> -->
+      <nav class="header-nav">
+        <ul>
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="sobre.html" title="Sobre">Sobre</a></li>
+          <li><a href="galeria.html" title="Galeria">Galeria</a></li>
+          <li><a href="contato.html" title="Contato">Contato</a></li>
+          <li><a href="jogar.html" title="Jogar" class="header-btn">Jogar</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main>
-    <section class="index">
+    <section class="banner">
       <div class="homepart-container">
         <img src="../imgs/vingador-logo.jpeg" width="800px" alt="Logo do site">
       </div>
+
+
     </section>
 
     <section class="sobre">
+      <h1>Sobre mim</h1>
+      <p class="psobremim">Meu nome é André, hoje estou com 33 anos e venho de uma transição de carreira, onde me formei
+        em Direito
+        e estou pivotando para a área de TI. Já tive uma breve experiência na área, e pretendo com o conhecimento
+        adquirido no curso de TADS me tornar um Desenvolvedor de Sistemas.
+      </p>
+
       <h1>Sobre o jogo</h1>
       <div class="container-about">
 
@@ -60,8 +70,8 @@
     <section class="galeria">
       <h1>Galeria de Fotos</h1>
       <div class="container-gal">
-          <img src="../imgs/jogo1.png" alt="Foto do jogo 1">
-          <img src="../imgs/jogo2.png" alt="Foto do jogo 2">
+        <img src="../imgs/jogo1.png" alt="Foto do jogo 1">
+        <img src="../imgs/jogo2.png" alt="Foto do jogo 2">
 
 
 
@@ -93,7 +103,10 @@
   </main>
 
   <footer>
-    <!-- lembrar de fazer o footer  -->
+    <p>Desenvolvido por André</p>
+    <a href="https://github.com/andreonr" title="Github">
+      <i class="fa-brands fa-github"></i>
+    </a>
   </footer>
 
 
@@ -103,14 +116,9 @@
   <script src="js/parsley.min.js"></script>
   <script src="js/fslightbox.js"></script>
   <script>
-    cpf = document.querySelector("#cpf");
-    idade = document.querySelector("#data");
-    telefone = document.querySelector("#telefone");
-    valor = document.querySelector("#valor");
 
-    VMasker(valor).maskMoney();
-    VMasker(cpf).maskPattern("999.999.999-99");
-    VMasker(data).maskPattern("99/99/9999");
+    telefone = document.querySelector("#telefone");
+
     VMasker(telefone).maskPattern("(99) 99999-9999");
   </script>
 </body>
